@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const { Shcema } = mongoose;
 
+const { Schema } = mongoose;
 const serviceSchema = new Schema({
     name: {
         type: String,
@@ -25,4 +25,7 @@ const serviceSchema = new Schema({
 const Service = mongoose.model("Service", serviceSchema);
 
 
-module.exports = mongoose.model('Service', serviceSchema);
+module.exports = {
+    Service, 
+    serviceSchema,
+};
