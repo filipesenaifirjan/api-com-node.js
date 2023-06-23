@@ -1,4 +1,4 @@
-const { Service: ServiceModel } = require("../models/Service");
+const { Service: ServiceModel, Service } = require("../models/Service");
 
 
 const serviceController = {
@@ -38,6 +38,17 @@ const serviceController = {
                 res.json(service);
             } catch (error) {
                 console.log(error);
+            }
+        },
+        delete: async(req, res) => {
+            try {
+                const service = await ServiceModel.findById(id);
+                if (!service) {
+                    res.status(404).json({ msg: "Serviço não encontrado." });
+                    return;
+                }
+            } catch (error){
+                console.log(error)
             }
         }
     
