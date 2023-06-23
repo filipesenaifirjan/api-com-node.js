@@ -5,4 +5,5 @@ Content-Type: application/json
     "description": "Alguma descrição",
     "price": 1400,
     "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Feducador.brasilescola.uol.com.br%2Festrategias-ensino%2Fcomo-produzir-imagens-reais-virtuais-sala-aula.htm&psig=AOvVaw0KgXxeOT4pi5GO39FqvJml&ust=1687528666176000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDY6KiE1_8CFQAAAAAdAAAAABAE"
+
 }
