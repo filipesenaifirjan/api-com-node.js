@@ -47,6 +47,9 @@ const serviceController = {
                     res.status(404).json({ msg: "Serviço não encontrado." });
                     return;
                 }
+                const deletedService = await ServiceModel.findByIdAndDelete(id)
+                res.status(200).json({ deletedService, msg: "Serviço excluído com sucesso" });
+
             } catch (error){
                 console.log(error)
             }
